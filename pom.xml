@@ -28,7 +28,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.codeup.academico.Academico</mainClass>
+                    <mainClass>com.codeup.academico.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
