@@ -10,4 +10,18 @@ package com.codeup.academico.domain;
  */
 public class Estudiante {
     
+    private final String id;
+    private String nombre;
+    
+    public Estudiante(String id, String nombre){
+        
+        if(id == null || id.isBlank()) throw new IllegalArgumentException("id requerido");
+        if(nombre == null || nombre.isBlank()) throw new IllegalArgumentException("nombre requerido");
+        this.id = id;
+        this.nombre = nombre;
+    }
+    
+    public String getId() {return id;}
+    public String getNombre() {return nombre;}
+    
 }
